@@ -23,4 +23,11 @@ storiesOf("Section", module)
       consequatur alias voluptate ut optio omnis ducimus, explicabo quis quos
       amet! Autem libero ab vero iste quibusdam doloremque. Deleniti!
     </Section>
+  ))
+  .add("Custom Width Section", () => (
+    <Section fullWidth={false} width="500">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas in quasi
+      consequatur alias voluptate ut optio omnis ducimus, explicabo quis quos
+      amet! Autem libero ab vero iste quibusdam doloremque. Deleniti!
+    </Section>
   ));

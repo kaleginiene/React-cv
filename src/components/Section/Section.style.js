@@ -7,5 +7,6 @@ export const Section = styled.section`
 
 export const Container = styled.div`
   max-width: 768px;
+  width: ${(props) => (props.width ? props.width + "px" : "none")};
   margin: 0 auto;
 `;

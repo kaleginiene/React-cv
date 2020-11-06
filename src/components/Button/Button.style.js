@@ -8,14 +8,15 @@ export const Button = styled.button`
   color: ${(props) => (props.color === "primary" ? "#fff" : "#222")};
   outline: none;
   border: none;
-  border-radius: 5px;
-  padding: 0.5em 2em;
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: uppercase;
   cursor: pointer;
   &:hover {
-    background: ${(props) =>
-      props.color === "primary"
-        ? props.theme.primary.hover.background
-        : props.theme.secondary.hover.background};
+    box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   }
   &:focus {
     background: ${(props) =>

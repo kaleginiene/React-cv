@@ -1,8 +1,8 @@
 const theme = {
   primary: {
-    background: "#333333",
+    background: "#222222",
     hover: {
-      background: "#222222",
+      background: "#333333",
     },
     focus: {
       background: "#111111",
