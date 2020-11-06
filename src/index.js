@@ -4,6 +4,7 @@ import Routes from "./Routes";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 import "normalize.css";
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
