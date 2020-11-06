@@ -18,7 +18,8 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   &:hover {
-    text-decoration: underline;
+    color: #333;
+    transition: ease-in 0.3s;
   }
   &:not(:last-child) {
     margin-right: 15px;
