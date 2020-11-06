@@ -23,3 +23,19 @@ export const CardWrapper = styled.div`
     position: sticky;
   }
 `;
+export const Title = styled.h1`
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+`;
+
+export const Article = styled.article`
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #333;
+  text-align: justify;
+  line-height: 1.5em;
+`;
