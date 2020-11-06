@@ -6,8 +6,9 @@ export const Card = styled.section`
   text-align: center;
   padding: 2em 0 0 0;
   background-color: #ebbce8;
-  position: fixed;
-  margin-left: 20px;
+  @media only screen and (min-width: 768px) {
+    position: fixed;
+  }
 `;
 
 export const Image = styled.img`
@@ -15,6 +16,7 @@ export const Image = styled.img`
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  margin: 1em 1.5em;
 `;
 
 export const Title = styled.h1`

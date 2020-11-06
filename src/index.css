@@ -2,5 +2,7 @@ body {
   background-image: url("./assets/background.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: 20%;
+  background-position-y: 15%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
 }

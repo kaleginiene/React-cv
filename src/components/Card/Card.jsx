@@ -8,7 +8,7 @@ function Card({ imgUrl, name, career }) {
       <S.Image src={imgUrl} />
       <S.Title>{name}</S.Title>
       <S.SubTitle>{career}</S.SubTitle>
-      <Section fullWidth background="eee">
+      <Section fullWidth background="fff">
         <Button color="primary">Download resume</Button>
       </Section>
     </S.Card>
