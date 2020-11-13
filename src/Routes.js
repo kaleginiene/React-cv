@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Header } from "./components";
-import { Home, About } from "./pages";
+import { Home, Experience } from "./pages";
 
 function Routes() {
   return (
@@ -10,7 +10,7 @@ function Routes() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
+        <Route exact path="/experience" component={Experience} />
       </Switch>
     </Router>
   );
