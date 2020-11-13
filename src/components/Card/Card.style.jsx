@@ -6,6 +6,7 @@ export const Card = styled.section`
   text-align: center;
   padding: 2em 0 0 0;
   background-color: #ebbce8;
+  margin: 0 auto;
   @media only screen and (min-width: 768px) {
     position: fixed;
   }
