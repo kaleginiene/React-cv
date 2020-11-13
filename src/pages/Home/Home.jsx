@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, Card, BreakLine } from "../../components";
+import { Section, Card, BreakLine, SkillsLevel } from "../../components";
 import * as S from "./Home.styled";
 import Photo from "../../assets/ieva.jpg";
 
@@ -14,7 +14,7 @@ function Home() {
         />
       </S.CardWrapper>
       <S.SectionWrapper>
-        <Section background="fff">
+        <Section fullWidth background="fff">
           <S.Title>About me</S.Title>
           <S.Article>
             I’ve been working in IT industry for about six years and now my
@@ -39,8 +39,17 @@ function Home() {
             </S.HalfWrapper>
             <S.HalfWrapper>
               <S.SubTitle>languages</S.SubTitle>
+              <SkillsLevel background="#ACD6E4" skill="English" level="8" />
+              <SkillsLevel
+                background="#ACD6E4"
+                skill="Lithuanian (native)"
+                level="10"
+              />
             </S.HalfWrapper>
           </S.FlexBlock>
+        </Section>
+        <Section fullWidth background="fff">
+          <S.Title>Portfolio</S.Title>
         </Section>
       </S.SectionWrapper>
     </S.Home>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Home = styled.main`
   @media only screen and (max-width: 768px) {
-    width: 320px;
+    width: 310px;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -10,29 +10,32 @@ export const Home = styled.main`
     max-width: 900px;
     display: flex;
     flex-wrap: wrap;
-    min-height: 90vh;
     margin: 0 auto;
   }
 `;
 
 export const SectionWrapper = styled.div`
-  width: 300px;
-  max-width: 100%;
-  margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    width: 310px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   @media only screen and (min-width: 768px) {
     width: calc(70% - 1em);
     margin: 0.5em;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
   }
 `;
 export const CardWrapper = styled.div`
   width: 300px;
   max-width: 100%;
   margin: 0 auto;
+  margin-bottom: 1em;
   font-weight: ${(props) => (props.weight ? props.weight : "normal")};
+  @media only screen and (max-width: 768px) {
+    width: 320px;
+    max-width: 100%;
+  }
   @media only screen and (min-width: 768px) {
     width: calc(30% - 1em);
     margin: 0.5em;
