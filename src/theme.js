@@ -9,7 +9,7 @@ const theme = {
     },
   },
   secondary: {
-    background: "#eeeeee",
+    background: "#ACD6E4",
     hover: {
       background: "e8e8e8",
     },

@@ -1,9 +1,19 @@
 import React from "react";
-import { Section, Card, BreakLine, SkillsLevel } from "../../components";
+import { useHistory } from "react-router-dom";
+import {
+  Section,
+  Card,
+  BreakLine,
+  SkillsLevel,
+  Icons,
+  Button,
+} from "../../components";
 import * as S from "./Home.styled";
 import Photo from "../../assets/ieva.jpg";
 
 function Home() {
+  const history = useHistory();
+
   return (
     <S.Home>
       <S.CardWrapper>
@@ -49,7 +59,44 @@ function Home() {
           </S.FlexBlock>
         </Section>
         <Section fullWidth background="fff">
-          <S.Title>Portfolio</S.Title>
+          <S.Title>Skills</S.Title>
+          <S.Article>
+            I've startded studying IT at CodeAcademy since 2019 September.
+            During various studies I've learnt creating websites, connect it
+            with MySQL data basaes and servers. I've worked with developer
+            platforms such as Digital Ocean, Microsoft Azure and Firebase. I
+            have strong set of HTML, CSS, SASS and JavaScript skills.
+            Furthermore, I am able to use BEM methodology writing the code too.
+            Moreover, I know how to work with CSS frameworks such as Bootstrap,
+            Bulma, Pure etc.
+          </S.Article>
+          <S.FlexBlock>
+            <S.HalfWrapper>
+              <S.SubTitle>working skills</S.SubTitle>
+              <SkillsLevel background="#ACD6E4" skill="Teamwork" level="8" />
+              <SkillsLevel
+                background="#ACD6E4"
+                skill="Quick learner"
+                level="10"
+              />
+              <SkillsLevel background="#ACD6E4" skill="Leadership" level="9" />
+              <SkillsLevel background="#ACD6E4" skill="Planning" level="8" />
+              <SkillsLevel
+                background="#ACD6E4"
+                skill="Project Management"
+                level="9"
+              />
+            </S.HalfWrapper>
+            <S.HalfWrapper>
+              <S.SubTitle>software skills</S.SubTitle>
+              <Icons />
+            </S.HalfWrapper>
+          </S.FlexBlock>
+          <S.Title>Courses</S.Title>
+          <p>To gain these skills, I've attended various courses. </p>
+          <Button handleClick={() => history.push("/education")}>
+            Check out certificates
+          </Button>
         </Section>
       </S.SectionWrapper>
     </S.Home>

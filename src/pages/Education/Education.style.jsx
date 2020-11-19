@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Home = styled.main`
-  @media only screen and (max-width: 768px) {
+export const Education = styled.main`
+@media only screen and (max-width: 768px) {
     width: 310px;
     max-width: 100%;
     margin: 0 auto;
@@ -9,11 +9,9 @@ export const Home = styled.main`
   @media only screen and (min-width: 768px) {
     max-width: 900px;
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
   }
-`;
-
+`
 export const SectionWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     width: 310px;
@@ -73,11 +71,6 @@ export const HalfWrapper = styled.section`
     width: calc(50% - 1em);
     font-size: 0.8rem;
     padding: 0.25em;
-    &.padding-block {
-      width: calc(50% - 2em);
-      padding: 1em;
-      box-sizing: border-box;
-    }
   }
 `;
 export const SubTitle = styled.h3`
@@ -88,3 +81,6 @@ export const SubTitle = styled.h3`
   font-weight: normal;
 `;
 
+export const Wrapper = styled.div`
+padding: 2em;
+`

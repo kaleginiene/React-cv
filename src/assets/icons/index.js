@@ -1,0 +1,9 @@
+export { default as ReactLogo } from "../icons/react.png";
+export { default as CssLogo } from "../icons/css.png";
+export { default as JavaScript } from "../icons/javascript.png";
+export { default as NodeLogo } from "../icons/node.png";
+export { default as PhotoshopLogo } from "../icons/photoshop.png";
+export { default as SassLogo } from "../icons/sass.png";
+export { default as VueJsLogo } from "../icons/vuejs.png";
+export { default as HtmlLogo } from "../icons/html.svg";
+export { default as GitHubLogo } from "../icons/github.png";
