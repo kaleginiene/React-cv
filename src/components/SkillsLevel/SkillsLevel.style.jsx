@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
+export const SkillsLevel = styled.div`
+  margin: 0 auto;
+`;
+
 export const Title = styled.h4`
   font-size: 0.7em;
   line-height: 1.2em;
   display: block;
   margin-bottom: 0.7em;
   font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  margin-left: 30px;
 `;
 
 export const FlexBlock = styled.div`
   display: flex;
+  margin-left: 30px;
 `;
 
 export const Bubble = styled.div`
@@ -19,7 +26,11 @@ export const Bubble = styled.div`
   border-radius: 100%;
   border: 1px solid ${(props) => props.background};
   margin-right: 0.3em;
+  margin-bottom: 1em;
   &&:nth-child(-n + ${(props) => props.level}) {
     background-color: ${(props) => props.background};
+  }
+  &&:nth-child(-n + ${(props) => props.level}):hover {
+    background-color: #d8dbde;
   }
 `;

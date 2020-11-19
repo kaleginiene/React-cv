@@ -12,7 +12,7 @@ export const Button = styled.button`
   padding: 1em 2em;
   font-family: "Quicksand", sans-serif;
   font-size: 0.8em;
-  font-weight: normal;
+  font-weight: ${(props) => (props.color === "primary" ? "normal" : "bold")};
   text-transform: uppercase;
   cursor: pointer;
   &:hover {

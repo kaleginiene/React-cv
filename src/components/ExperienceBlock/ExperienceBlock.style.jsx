@@ -6,12 +6,18 @@ export const FlexBlock = styled.div`
   font-family: "Quicksand", sans-serif;
   margin-left: 160px;
   position: relative;
-  min-height: 200px;
+  min-height: 150px;
   margin: 0;
   background-color: #fff;
+  &:last-child {
+    margin-bottom: 5em;
+  }
   @media only screen and (max-width: 768px) {
     margin: 0;
-    display: block;
+    flex-direction: column;
+    &:last-child {
+      margin-bottom: 10em;
+    }
   }
 `;
 
@@ -21,7 +27,7 @@ export const TimeBlock = styled.div`
   box-sizing: border-box;
   font-size: 0.8em;
   @media only screen and (max-width: 768px) {
-    max-width: 100%;
+    width: 100%;
   }
   @media only screen and (min-width: 768px) {
   }
@@ -34,7 +40,6 @@ export const Line = styled.div`
 
 export const Block = styled.div`
   width: 70%;
-  height: 30px;
   padding: 0.4em 0.5em;
   box-sizing: border-box;
   position: relative;
@@ -50,7 +55,7 @@ export const Block = styled.div`
     background-color: #010101;
   }
   @media only screen and (max-width: 768px) {
-    width: 60%;
+    width: 100%;
   }
   @media only screen and (min-width: 768px) {
   }
@@ -67,6 +72,7 @@ export const Date = styled.div`
     float: right;
     margin-right: 1em;
     text-align: center;
+    font-weight: bold;
     &&::after {
       content: "";
       top: 0;
@@ -82,12 +88,17 @@ export const Date = styled.div`
   }
   @media only screen and (max-width: 768px) {
     width: 120px;
+    position: relative;
     font-size: 0.65em;
+    background-color: #acd6e4;
     float: left;
+    padding: 0.67em;
+    box-sizing: border-box;
+    font-weight: bold;
     &&::after {
       content: "";
       top: 0;
-      left: 100%;
+      left: 99%;
       width: 0;
       height: 0;
       position: absolute;
@@ -109,6 +120,7 @@ export const Company = styled.h4`
   margin: 0 0 0.5em;
   font-weight: normal;
   color: #444;
+  font-size: 1.3em;
 `;
 
 export const Logo = styled.img`

@@ -27,9 +27,11 @@ export const StyledLink = styled(Link)`
   color: #757575;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
+  font-weight: bold;
   &:hover {
     color: #333;
     transition: ease-in 0.3s;
+    text-decoration: none;
   }
   &:not(:last-child) {
     margin-right: 15px;
