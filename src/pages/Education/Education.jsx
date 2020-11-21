@@ -7,7 +7,6 @@ import * as S from "./Education.style";
 function Education() {
   return (
     <S.Education>
-      {" "}
       <S.CardWrapper>
         <Card
           imgUrl={Photo}
@@ -17,7 +16,7 @@ function Education() {
       </S.CardWrapper>
       <S.SectionWrapper>
         <Section fullWidth background="fff">
-          <S.Title>Experience</S.Title>
+          <S.Title>Education</S.Title>
           {educationData &&
             educationData.map((field, index) => (
               <ExperienceBlock

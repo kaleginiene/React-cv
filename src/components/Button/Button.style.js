@@ -14,6 +14,7 @@ export const Button = styled.button`
   font-size: 0.8em;
   font-weight: ${(props) => (props.color === "primary" ? "normal" : "bold")};
   text-transform: uppercase;
+  transition: ease-in 0.3s;
   cursor: pointer;
   &:hover {
     box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);

@@ -8,7 +8,7 @@ function Header() {
         <S.StyledLink to="/">home</S.StyledLink>
         <S.StyledLink to="/experience">experience</S.StyledLink>
         <S.StyledLink to="/education">education</S.StyledLink>
-        <S.StyledLink to="/about">portfolio</S.StyledLink>
+        <S.StyledLink to="/portfolio">portfolio</S.StyledLink>
         <S.StyledLink to="/about">contacts</S.StyledLink>
       </S.Actions>
     </S.Header>

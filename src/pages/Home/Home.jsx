@@ -25,7 +25,7 @@ function Home() {
       </S.CardWrapper>
       <S.SectionWrapper>
         <Section fullWidth background="fff">
-          <S.Title>About me</S.Title>
+          <S.TitleHeading>About me</S.TitleHeading>
           <S.Article>
             I’ve been working in IT industry for about six years and now my
             career goal is to retrain from seller to FrontEnd developer. I’m
@@ -94,9 +94,11 @@ function Home() {
           </S.FlexBlock>
           <S.Title>Courses</S.Title>
           <p>To gain these skills, I've attended various courses. </p>
-          <Button handleClick={() => history.push("/education")}>
-            Check out certificates
-          </Button>
+          <S.PaddingBlock>
+            <Button handleClick={() => history.push("/education")}>
+              Check out certificates
+            </Button>
+          </S.PaddingBlock>
         </Section>
       </S.SectionWrapper>
     </S.Home>

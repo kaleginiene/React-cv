@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Education = styled.main`
-@media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     width: 310px;
     max-width: 100%;
     margin: 0 auto;
@@ -11,7 +11,7 @@ export const Education = styled.main`
     display: flex;
     margin: 0 auto;
   }
-`
+`;
 export const SectionWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     width: 310px;
@@ -82,5 +82,5 @@ export const SubTitle = styled.h3`
 `;
 
 export const Wrapper = styled.div`
-padding: 2em;
-`
+  padding: 2em;
+`;
