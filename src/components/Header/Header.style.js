@@ -6,7 +6,7 @@ export const Header = styled.header`
     width: 300px;
     max-width: 100%;
   }
-  padding: 1em;
+  padding: 1em 3em;
 `;
 
 export const Actions = styled.nav`
@@ -16,20 +16,21 @@ export const Actions = styled.nav`
 
   @media only screen and (min-width: 768px) {
     text-align: right;
-    width: 768px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding-right: 0.5em;
     font-family: "Quicksand", sans-serif;
   }
 `;
 
 export const StyledLink = styled(Link)`
   font-size: 0.9em;
-  color: #757575;
+  color: #2d2929;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   &:hover {
-    color: #333;
+    color: #fcf8f7;
     transition: ease-in 0.3s;
     text-decoration: none;
   }

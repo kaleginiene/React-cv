@@ -16,10 +16,10 @@ function Portfolio() {
       </S.CardWrapper>
       <S.SectionWrapper>
         <Section fullWidth background="fff">
-          <S.Title>My projects</S.Title>
+          <S.TitleHeading>My projects</S.TitleHeading>
           <S.Article>
             To develop the skills I gained during my courses, I've been making
-            various projects.
+            various projects. Check them out below.
           </S.Article>
           <BreakLine />
           <ProjectCard

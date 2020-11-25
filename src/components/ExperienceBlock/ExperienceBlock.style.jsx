@@ -40,7 +40,7 @@ export const Line = styled.div`
 
 export const Block = styled.div`
   width: 70%;
-  padding: 0.4em 0.5em;
+  padding: 0em 0.5em;
   box-sizing: border-box;
   position: relative;
   color: #444;
@@ -66,8 +66,8 @@ export const Date = styled.div`
     width: 160px;
     display: flex;
     position: relative;
-    background-color: #acd6e4;
-    padding: 0.65em;
+    background-color: #cebaba;
+    padding: 0.5em;
     box-sizing: border-box;
     float: right;
     margin-right: 1em;
@@ -83,29 +83,29 @@ export const Date = styled.div`
       border-top: 16px solid transparent;
       border-bottom: 16px solid transparent;
       border-right: 10px solid transparent;
-      border-left: 10px solid #acd6e4;
+      border-left: 10px solid#CEBABA;
     }
   }
   @media only screen and (max-width: 768px) {
     width: 120px;
     position: relative;
-    font-size: 0.65em;
-    background-color: #acd6e4;
+    font-size: 0.7em;
+    background-color: #cebaba;
     float: left;
-    padding: 0.67em;
+    padding: 0.894em;
     box-sizing: border-box;
     font-weight: bold;
     &&::after {
       content: "";
-      top: 0;
+      top: -0.5px;
       left: 99%;
       width: 0;
       height: 0;
       position: absolute;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 8px solid transparent;
-      border-left: 8px solid #acd6e4;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 12px solid transparent;
+      border-left: 12px solid #cebaba;
     }
   }
 `;
@@ -133,4 +133,5 @@ export const Description = styled.p`
   font-family: "Quicksand", sans-serif;
   font-size: 0.8em;
   font-weight: normal;
+  text-align: justify;
 `;

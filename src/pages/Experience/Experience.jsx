@@ -16,7 +16,7 @@ function Experience() {
       </S.CardWrapper>
       <S.SectionWrapper>
         <Section fullWidth background="fff">
-          <S.Title>Experience</S.Title>
+          <S.TitleHeading>Experience</S.TitleHeading>
           {experienceData &&
             experienceData.map((field, index) => (
               <ExperienceBlock

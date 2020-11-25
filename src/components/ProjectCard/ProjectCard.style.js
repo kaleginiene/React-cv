@@ -45,7 +45,7 @@ export const Title = styled.h3`
 `;
 
 export const StyledLink = styled.a`
-  border-radius: 10px;
+  border-radius: 35px;
   text-decoration: none;
   padding: 1em 2em;
   font-family: "Quicksand", sans-serif;

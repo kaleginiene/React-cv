@@ -9,3 +9,6 @@ export { default as Icons } from "./Icons/Icons";
 export { default as Footer } from "./Footer/Footer";
 export { default as CarouselBoot } from "./Carousel/Carousel";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
+export { default as FormTemplate } from "./FormTemplate/FormTemplate";
+export { default as InputField } from "./InputField/InputField";
+export { default as Loader } from "./Loader/Loader";

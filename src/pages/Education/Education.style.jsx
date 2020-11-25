@@ -7,7 +7,7 @@ export const Education = styled.main`
     margin: 0 auto;
   }
   @media only screen and (min-width: 768px) {
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     margin: 0 auto;
   }
@@ -41,11 +41,11 @@ export const CardWrapper = styled.div`
     box-sizing: border-box;
   }
 `;
-export const Title = styled.h1`
+export const TitleHeading = styled.h1`
   font-family: "Quicksand", sans-serif;
   color: #333;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
 `;
 

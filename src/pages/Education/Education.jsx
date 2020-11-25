@@ -16,7 +16,7 @@ function Education() {
       </S.CardWrapper>
       <S.SectionWrapper>
         <Section fullWidth background="fff">
-          <S.Title>Education</S.Title>
+          <S.TitleHeading>Education</S.TitleHeading>
           {educationData &&
             educationData.map((field, index) => (
               <ExperienceBlock

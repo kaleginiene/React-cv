@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./ProjectCard.style";
-import { Button } from "../../components";
 
 // function delayedHover() {
 //   return(

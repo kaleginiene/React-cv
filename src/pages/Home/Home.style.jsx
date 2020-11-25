@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Experience = styled.main`
+export const Home = styled.main`
   @media only screen and (max-width: 768px) {
     width: 310px;
     max-width: 100%;
@@ -40,15 +40,30 @@ export const CardWrapper = styled.div`
     width: calc(30% - 1em);
     margin: 0.5em;
     position: sticky;
-    box-sizing: border-box;
   }
 `;
+
 export const TitleHeading = styled.h1`
   font-family: "Quicksand", sans-serif;
   color: #333;
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: bold;
+`;
+export const Title = styled.h2`
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+`;
+export const SubTitle = styled.h3`
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-top: 1em;
 `;
 
 export const Article = styled.article`
@@ -62,8 +77,13 @@ export const Article = styled.article`
 export const FlexBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 `;
 
+export const Span = styled.span`
+  font-weight: bold;
+`;
 export const HalfWrapper = styled.section`
   @media only screen and (max-width: 768px) {
     width: 300px;
@@ -72,13 +92,14 @@ export const HalfWrapper = styled.section`
   @media only screen and (min-width: 768px) {
     width: calc(50% - 1em);
     font-size: 0.8rem;
-    padding: 0.25em;
+    padding: 0.25em 0;
+    box-sizing: border-box;
   }
 `;
-export const SubTitle = styled.h3`
-  font-family: "Quicksand", sans-serif;
-  color: #333;
-  text-align: center;
-  font-size: 1.3em;
-  font-weight: normal;
+
+export const PaddingBlock = styled.div`
+  padding: 1em 0;
+  &.padding-block {
+    padding: 1em 0 1em 4em;
+  }
 `;

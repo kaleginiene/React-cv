@@ -6,7 +6,7 @@ import {
   ReactLogo,
   JavaScript,
   NodeLogo,
-  PhotoshopLogo,
+  BootstrapLogo,
   SassLogo,
   VueJsLogo,
   GitHubLogo,
@@ -29,13 +29,16 @@ function Icons() {
             setShowSkill("block");
             setNewClass("html");
           }}
-          onMouseOut={() => {setShowSkill("none"); setNewClass("block");}}
+          onMouseOut={() => {
+            setShowSkill("none");
+            setNewClass("block");
+          }}
         />
       </S.IconWrapper>
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="css" newClass={newClass}>
           CSS <br /> 70%
-          <br /> strong
+          <br /> Advanced
         </S.Skill>
         <S.Icon
           src={CssLogo}
@@ -49,7 +52,7 @@ function Icons() {
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="js" newClass={newClass}>
           JavaScript <br /> 50%
-          <br /> strong
+          <br /> Intermediate
         </S.Skill>
         <S.Icon
           src={JavaScript}
@@ -62,8 +65,8 @@ function Icons() {
       </S.IconWrapper>
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="sass" newClass={newClass}>
-          SASS <br /> 70%
-          <br /> strong
+          SASS <br /> 60%
+          <br /> Intermediate
         </S.Skill>
         <S.Icon
           src={SassLogo}
@@ -77,7 +80,7 @@ function Icons() {
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="node" newClass={newClass}>
           Node <br /> 30%
-          <br /> strong
+          <br /> Novice
         </S.Skill>
         <S.Icon
           src={NodeLogo}
@@ -91,7 +94,7 @@ function Icons() {
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="react" newClass={newClass}>
           React <br /> 50%
-          <br /> strong
+          <br /> Intermediate
         </S.Skill>
         <S.Icon
           src={ReactLogo}
@@ -105,7 +108,7 @@ function Icons() {
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="vue" newClass={newClass}>
           Vue <br /> 50%
-          <br /> strong
+          <br /> Intermediate
         </S.Skill>
         <S.Icon
           src={VueJsLogo}
@@ -118,8 +121,8 @@ function Icons() {
       </S.IconWrapper>
       <S.IconWrapper show={showSkill}>
         <S.Skill show={showSkill} className="git" newClass={newClass}>
-          Github <br /> 70%
-          <br /> strong
+          Github <br /> 60%
+          <br /> Intermediate
         </S.Skill>
         <S.Icon
           src={GitHubLogo}
@@ -131,15 +134,15 @@ function Icons() {
         />
       </S.IconWrapper>
       <S.IconWrapper show={showSkill}>
-        <S.Skill show={showSkill} className="photoshop" newClass={newClass}>
-          Photoshop <br /> 30%
-          <br /> novice
+        <S.Skill show={showSkill} className="bootstrap" newClass={newClass}>
+          Bootstrap <br /> 50%
+          <br /> Intermediate
         </S.Skill>
         <S.Icon
-          src={PhotoshopLogo}
+          src={BootstrapLogo}
           onMouseOver={() => {
             setShowSkill("block");
-            setNewClass("photoshop");
+            setNewClass("bootstrap");
           }}
           onMouseOut={() => setShowSkill("none")}
         />
