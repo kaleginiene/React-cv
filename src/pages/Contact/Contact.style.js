@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Contact = styled.main`
   @media only screen and (max-width: 768px) {
-    width: 310px;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -11,6 +11,7 @@ export const Contact = styled.main`
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    min-height: 82vh;
   }
 `;
 
@@ -57,6 +58,9 @@ export const Title = styled.h2`
   text-transform: uppercase;
   font-size: 1em;
   font-weight: bold;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
 `;
 export const SubTitle = styled.h3`
   font-family: "Quicksand", sans-serif;

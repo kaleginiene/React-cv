@@ -15,8 +15,9 @@ export const FlexBlock = styled.div`
   @media only screen and (max-width: 768px) {
     margin: 0;
     flex-direction: column;
+    border-left: 1px solid #cebaba;
     &:last-child {
-      margin-bottom: 10em;
+      margin-bottom: 0.5em;
     }
   }
 `;
@@ -34,7 +35,7 @@ export const TimeBlock = styled.div`
 `;
 export const Line = styled.div`
   width: 1px;
-  background-color: #acd6e4;
+  background-color: #cebaba;
   margin: 0;
 `;
 
@@ -95,6 +96,7 @@ export const Date = styled.div`
     padding: 0.894em;
     box-sizing: border-box;
     font-weight: bold;
+    margin-bottom: 0.5em;
     &&::after {
       content: "";
       top: -0.5px;
@@ -134,4 +136,5 @@ export const Description = styled.p`
   font-size: 0.8em;
   font-weight: normal;
   text-align: justify;
+  padding-bottom: 1.5em;
 `;

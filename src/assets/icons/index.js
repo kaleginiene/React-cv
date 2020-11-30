@@ -9,3 +9,5 @@ export { default as HtmlLogo } from "../icons/html.svg";
 export { default as GitHubLogo } from "../icons/github.png";
 export { default as LinkedIN } from "../icons/linkedin.svg";
 export { default as GitHub } from "../icons/github.svg";
+export { default as Tag } from "../icons/tag.svg";
+export { default as Exit } from "../icons/exit.svg";

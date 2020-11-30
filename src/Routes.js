@@ -6,7 +6,7 @@ const HomeLazy = lazy(() => import("./pages/Home/Home"));
 const ExperienceLazy = lazy(() => import("./pages/Experience/Experience"));
 const EducationLazy = lazy(() => import("./pages/Education/Education"));
 const PortfolioLazy = lazy(() => import("./pages/Portfolio/Portfolio"));
-const ContactLazy = lazy(() => import("./pages/Contact/Contact"));
+// const ContactLazy = lazy(() => import("./pages/Contact/Contact"));
 
 function Routes() {
   return (
@@ -18,7 +18,7 @@ function Routes() {
           <Route exact path="/experience" component={ExperienceLazy} />
           <Route exact path="/education" component={EducationLazy} />
           <Route exact path="/portfolio" component={PortfolioLazy} />
-          <Route exact path="/contacts" component={ContactLazy} />
+          {/* <Route exact path="/contacts" component={ContactLazy} /> */}
         </Switch>
       </Suspense>
       <Footer />

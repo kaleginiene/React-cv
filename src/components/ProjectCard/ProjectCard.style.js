@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import { GitHub, Tag } from "../../assets/icons";
 
 export const FlexBlock = styled.section`
   display: flex;
   flex-wrap: wrap;
   margin-top: 1em;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Container = styled.div`
@@ -17,8 +20,12 @@ export const Container = styled.div`
   position: relative;
   transition: ease-in 0.3s;
   box-sizing: border-box;
+  box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   &&:hover {
     opacity: 0.9;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 export const Caption = styled.div`
@@ -41,7 +48,6 @@ export const Title = styled.h3`
   text-align: center;
   font-size: 1.5em;
   font-weight: normal;
-  margin-bottom: 2.2em;
 `;
 
 export const StyledLink = styled.a`
@@ -62,6 +68,19 @@ export const StyledLink = styled.a`
   }
 `;
 
+export const Icon = styled.div`
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 0.5em;
+  &.github {
+    background-image: url(${GitHub});
+  }
+  &.website {
+    background-image: url(${Tag});
+  }
+`;
+
 export const Image = styled.img`
   width: 100%;
   height: 100%;
@@ -70,6 +89,18 @@ export const Image = styled.img`
   opacity: 1;
   display: block;
   &&:hover {
-    opacity: 0;
+    opacity: 0.1;
+  }
+`;
+
+export const SocialLink = styled.a`
+  font-weight: bold;
+  text-decoration: none;
+  color: #7b6a68;
+  font-size: 0.9em;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+    color: #493f3e;
   }
 `;

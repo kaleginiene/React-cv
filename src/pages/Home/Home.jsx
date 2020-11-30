@@ -43,13 +43,17 @@ function Home() {
             <S.HalfWrapper>
               <S.SubTitle>personal information</S.SubTitle>
               <S.FlexBlock>
-                <S.CardWrapper weight="bold">Full name:</S.CardWrapper>
+                <S.HalfWrapper weight="bold">Full name:</S.HalfWrapper>
                 <S.HalfWrapper>Ieva Kaleginienė</S.HalfWrapper>
-                <S.CardWrapper weight="bold">City:</S.CardWrapper>
+                <S.HalfWrapper weight="bold">City:</S.HalfWrapper>
                 <S.HalfWrapper>Vilnius</S.HalfWrapper>
-                <S.CardWrapper weight="bold">Email:</S.CardWrapper>
-                <S.HalfWrapper>ieva.kaleginiene@gmail.com</S.HalfWrapper>
-                <S.CardWrapper weight="bold">Phone:</S.CardWrapper>
+                <S.HalfWrapper weight="bold">Email:</S.HalfWrapper>
+                <S.HalfWrapper>
+                  <S.Link href="mailto:ieva.kaleginiene@gmail.com">
+                    ieva.kaleginiene@gmail.com
+                  </S.Link>
+                </S.HalfWrapper>
+                <S.HalfWrapper weight="bold">Phone:</S.HalfWrapper>
                 <S.HalfWrapper>+370 677 28390</S.HalfWrapper>
               </S.FlexBlock>
             </S.HalfWrapper>

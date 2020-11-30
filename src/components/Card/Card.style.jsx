@@ -7,9 +7,16 @@ export const Card = styled.section`
   padding: 2em 0 0 0;
   background-color: #e6dbdb;
   margin: 0 auto;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     position: fixed;
-    width: 280px;
+    max-width: 300px;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    max-width: 300px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -20,6 +27,10 @@ export const Image = styled.img`
   object-fit: cover;
   margin: 1em 1.5em;
   border: 2px double ${(props) => props.theme.secondary.color};
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 export const Title = styled.h1`

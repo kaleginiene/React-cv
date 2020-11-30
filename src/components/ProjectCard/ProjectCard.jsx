@@ -1,12 +1,6 @@
 import React from "react";
 import * as S from "./ProjectCard.style";
 
-// function delayedHover() {
-//   return(
-
-//   )
-// }
-
 function ProjectCard({ portfolio }) {
   console.log();
   return (
@@ -18,13 +12,22 @@ function ProjectCard({ portfolio }) {
             <S.Image src={project.url} />
             <S.Caption>
               <S.Title>{project.caption}</S.Title>
-              <S.StyledLink
-                href={project.page}
-                target="_blank"
-                rel="noreferrer"
-              >
-                View project
-              </S.StyledLink>
+              <S.FlexBlock>
+                <S.SocialLink href={project.page} target="_blank">
+                  <S.Icon className="website" />
+                </S.SocialLink>
+                <S.SocialLink href={project.page} target="_blank">
+                  Check the website
+                </S.SocialLink>
+              </S.FlexBlock>
+              <S.FlexBlock>
+                <S.SocialLink href={project.git} target="_blank">
+                  <S.Icon className="github" />
+                </S.SocialLink>
+                <S.SocialLink href={project.git} target="_blank">
+                  GitHub
+                </S.SocialLink>
+              </S.FlexBlock>
             </S.Caption>
           </S.Container>
         ))}

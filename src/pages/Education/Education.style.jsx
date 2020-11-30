@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Education = styled.main`
   @media only screen and (max-width: 768px) {
-    width: 310px;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -14,7 +14,7 @@ export const Education = styled.main`
 `;
 export const SectionWrapper = styled.div`
   @media only screen and (max-width: 768px) {
-    width: 310px;
+    width: 95%;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -31,7 +31,7 @@ export const CardWrapper = styled.div`
   margin-bottom: 1em;
   font-weight: ${(props) => (props.weight ? props.weight : "normal")};
   @media only screen and (max-width: 768px) {
-    width: 320px;
+    width: 100%;
     max-width: 100%;
   }
   @media only screen and (min-width: 768px) {
@@ -47,6 +47,9 @@ export const TitleHeading = styled.h1`
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: bold;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 1em;
+  }
 `;
 
 export const Article = styled.article`

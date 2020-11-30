@@ -9,6 +9,8 @@ function InputField({
   radioId,
   label,
   radioName,
+  minLength,
+  required,
 }) {
   switch (type) {
     case "number":
@@ -20,6 +22,20 @@ function InputField({
             step="0.1"
             placeholder={placeholder}
             onChange={handleChange}
+            required={required}
+          />
+        </S.InputWrapper>
+      );
+    case "email":
+      return (
+        <S.InputWrapper>
+          <S.Label>{label}</S.Label>
+          <S.Input
+            type="email"
+            placeholder={placeholder}
+            onChange={handleChange}
+            required={required}
+            minLength={minLength}
           />
         </S.InputWrapper>
       );
@@ -31,6 +47,7 @@ function InputField({
             type="longtext"
             placeholder={placeholder}
             onChange={handleChange}
+            required={required}
           />
         </S.InputWrapper>
       );
@@ -73,6 +90,8 @@ function InputField({
             type="text"
             placeholder={placeholder}
             onChange={handleChange}
+            minLength={minLength}
+            required={required}
           />
         </S.InputWrapper>
       );

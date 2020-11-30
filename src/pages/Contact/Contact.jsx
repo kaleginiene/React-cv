@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FormContext } from "../../contexts/FormContext";
 import * as S from "./Contact.style";
 import { Section, Card, FormTemplate } from "../../components";
 import Photo from "../../assets/ieva.jpg";
 import formData from "../../utilities/formData";
 
 function Contact() {
+  const displayForm = useContext(FormContext);
+
   return (
     <S.Contact>
       <S.CardWrapper>
@@ -16,26 +19,19 @@ function Contact() {
       </S.CardWrapper>
       <S.SectionWrapper>
         <Section fullWidth background="fff">
-          <S.TitleHeading>Contact me</S.TitleHeading>
-          <FormTemplate
-            fields={formData}
-            buttonText="Send your message"
-            formTitle="Feel free to contact me"
-            callback={() => console.log("ok")}
-            // callback={(fieldValues) => {
-            //   fetch("http://localhost:8080/messages", {
-            //     method: "POST",
-            //     headers: {
-            //       "Content-Type": "application/json",
-            //     },
-            //     body: JSON.stringify({
-            //       name: fieldValues.name,
-            //       email: fieldValues.email,
-            //       message: fieldValues.message,
-            //     }),
-            //   }).catch((err) => console.log(err));
-            // }}
-          />
+          {displayForm.state === "block" && (
+            <S.TitleHeading>Contact me</S.TitleHeading>
+          )}
+          {displayForm.state === "block" && (
+            <FormTemplate
+              fields={formData}
+              buttonText="Send your message"
+              formTitle="Feel free to contact me"
+            />
+          )}
+          {displayForm.state === "none" && (
+            <S.Title>Thank You for your message!</S.Title>
+          )}
         </Section>
       </S.SectionWrapper>
     </S.Contact>
