@@ -8,8 +8,8 @@ export const Card = styled.section`
   background-color: #e6dbdb;
   margin: 0 auto;
   @media only screen and (min-width: 769px) {
-    position: fixed;
     max-width: 300px;
+    position: fixed;
   }
   @media only screen and (min-width: 576px) and (max-width: 768px) {
     max-width: 300px;
@@ -25,6 +25,7 @@ export const Image = styled.img`
   height: 230px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 10% 10%;
   margin: 1em 1.5em;
   border: 2px double ${(props) => props.theme.secondary.color};
   @media only screen and (min-width: 576px) and (max-width: 768px) {

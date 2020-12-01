@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkillsLevel = styled.div`
   margin: 0 auto;
-  padding: 0 0.5em;
+  float: ${(props) => props.float};
 `;
 
 export const Title = styled.h4`
@@ -20,8 +20,8 @@ export const FlexBlock = styled.div`
 
 export const Bubble = styled.div`
   box-sizing: border-box;
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
   border-radius: 100%;
   border: 1px solid ${(props) => props.background};
   &:not(:last-child) {

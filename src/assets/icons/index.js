@@ -11,3 +11,6 @@ export { default as LinkedIN } from "../icons/linkedin.svg";
 export { default as GitHub } from "../icons/github.svg";
 export { default as Tag } from "../icons/tag.svg";
 export { default as Exit } from "../icons/exit.svg";
+export { default as LocationPin } from "../icons/pin.svg";
+export { default as EmailIcon } from "../icons/mail.svg";
+export { default as PhoneIcon } from "../icons/phone.svg";

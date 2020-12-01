@@ -42,31 +42,35 @@ function Home() {
           <S.FlexBlock>
             <S.HalfWrapper>
               <S.SubTitle>personal information</S.SubTitle>
-              <S.FlexBlock>
-                <S.HalfWrapper weight="bold">Full name:</S.HalfWrapper>
-                <S.HalfWrapper>Ieva Kaleginienė</S.HalfWrapper>
-                <S.HalfWrapper weight="bold">City:</S.HalfWrapper>
-                <S.HalfWrapper>Vilnius</S.HalfWrapper>
-                <S.HalfWrapper weight="bold">Email:</S.HalfWrapper>
-                <S.HalfWrapper>
-                  <S.Link href="mailto:ieva.kaleginiene@gmail.com">
-                    ieva.kaleginiene@gmail.com
-                  </S.Link>
-                </S.HalfWrapper>
-                <S.HalfWrapper weight="bold">Phone:</S.HalfWrapper>
-                <S.HalfWrapper>+370 677 28390</S.HalfWrapper>
-              </S.FlexBlock>
+              <S.ContactBlock>
+                <S.Icon className="location" />
+                <div>Vilnius</div>
+              </S.ContactBlock>
+              <S.ContactBlock>
+                <S.Icon className="email" />
+                <S.Link href="mailto:ieva.kaleginiene@gmail.com">
+                  ieva.kaleginiene@gmail.com
+                </S.Link>
+              </S.ContactBlock>
+              <S.ContactBlock>
+                <S.Icon className="phone" />
+                <S.Link href="tel:+37067728390">+370 677 28390</S.Link>
+              </S.ContactBlock>
             </S.HalfWrapper>
             <S.HalfWrapper>
               <S.SubTitle>languages</S.SubTitle>
-              <S.PaddingBlock className="padding-block">
-                <SkillsLevel background="#CEBABA" skill="English" level="8" />
-                <SkillsLevel
-                  background="#CEBABA"
-                  skill="Lithuanian (native)"
-                  level="10"
-                />
-              </S.PaddingBlock>
+              <SkillsLevel
+                background="#CEBABA"
+                skill="English"
+                level="8"
+                float="right"
+              />
+              <SkillsLevel
+                background="#CEBABA"
+                skill="Lithuanian (native)"
+                level="10"
+                float="right"
+              />
             </S.HalfWrapper>
           </S.FlexBlock>
         </Section>
@@ -82,8 +86,9 @@ function Home() {
             <S.Span> HTML, CSS, SASS and JavaScript </S.Span>skills.
             Furthermore, I can use <S.Span>BEM methodology</S.Span> writing the
             code too. Moreover, I know how to work with CSS frameworks such as
-            <S.Span> Bootstrap, Bulma, Pure </S.Span>etc. Besides, I can write
-            high-quality code using <S.Span>React </S.Span>JavaScript library or
+            <S.Span> Bootstrap, Bulma, Pure CSS </S.Span>etc. Besides, I can
+            write high-quality code using <S.Span>React </S.Span>JavaScript
+            library or
             <S.Span> Vue.js </S.Span>
             framework.
           </S.Article>

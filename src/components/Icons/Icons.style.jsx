@@ -9,8 +9,8 @@ export const FlexBlock = styled.div`
 `;
 export const IconWrapper = styled.div`
   position: relative;
-  width: 85px;
-  height: 85px;
+  width: 90px;
+  height: 90px;
   background: ${(props) => (props.show === "block" ? "#A58C96" : "#fff")};
   border-radius: 10px;
 `;
@@ -37,8 +37,8 @@ export const Icon = styled.div`
   background-repeat: no-repeat;
   box-sizing: border-box;
   padding: 1em;
-  width: 85px;
-  height: 85px;
+  width: 90px;
+  height: 90px;
   background-color: #a58c96;
   border: 3px solid #fff;
   border-radius: 10px;

@@ -4,7 +4,7 @@ export const Section = styled.section`
   background: #${(props) => props.background};
   padding: 1em 2.2em;
   &:not(:first-child) {
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
   margin: 0 auto;
 `;

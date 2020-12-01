@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { LocationPin, PhoneIcon, EmailIcon } from "../../assets/icons";
 
 export const Home = styled.main`
   @media only screen and (max-width: 768px) {
@@ -11,6 +12,7 @@ export const Home = styled.main`
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    position: relative;
   }
 `;
 
@@ -22,7 +24,7 @@ export const SectionWrapper = styled.div`
   }
   @media only screen and (min-width: 768px) {
     width: calc(70% - 1em);
-    margin: 0.5em;
+    margin: 0.5em 0;
     box-sizing: border-box;
   }
 `;
@@ -41,7 +43,7 @@ export const CardWrapper = styled.div`
   @media only screen and (min-width: 769px) {
     width: calc(30% - 1em);
     margin: 0.5em;
-    position: sticky;
+    position: relative;
   }
 `;
 
@@ -81,8 +83,7 @@ export const Article = styled.article`
 export const FlexBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const Span = styled.span`
@@ -96,10 +97,33 @@ export const HalfWrapper = styled.section`
   }
   @media only screen and (min-width: 768px) {
     width: calc(50% - 1em);
+    min-height: 10em;
     font-size: 0.8rem;
     padding: 0.25em 0;
     box-sizing: border-box;
     font-weight: ${(props) => (props.weight ? props.weight : "normal")};
+  }
+`;
+export const ContactBlock = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+`;
+
+export const Icon = styled.div`
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 1em;
+  &.location {
+    background-image: url(${LocationPin});
+  }
+  &.email {
+    background-image: url(${EmailIcon});
+  }
+  &.phone {
+    background-image: url(${PhoneIcon});
   }
 `;
 export const Link = styled.a`
