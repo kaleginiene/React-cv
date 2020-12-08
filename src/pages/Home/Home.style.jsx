@@ -91,7 +91,6 @@ export const Span = styled.span`
 `;
 export const HalfWrapper = styled.section`
   @media only screen and (max-width: 768px) {
-    width: 300px;
     max-width: 100%;
     font-weight: ${(props) => (props.weight ? props.weight : "normal")};
   }
@@ -109,6 +108,9 @@ export const ContactBlock = styled.div`
   align-items: center;
   margin-bottom: 1em;
   font-size: 1.2em;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.9em;
+  }
 `;
 
 export const Icon = styled.div`
@@ -124,6 +126,10 @@ export const Icon = styled.div`
   }
   &.phone {
     background-image: url(${PhoneIcon});
+  }
+  @media only screen and (max-width: 374px) {
+    width: 22px;
+    height: 22px;
   }
 `;
 export const Link = styled.a`

@@ -11,11 +11,11 @@ export const Section = styled.section`
 
 export const Container = styled.div`
   @media only screen and (max-width: 768px) {
-    width: 310px;
+    width: 100%;
     max-width: 100%;
   }
   max-width: 768px;
-  width: ${(props) => (props.width ? props.width + "px" : "none")};
+  width: ${(props) => (props.width ? props.width + "em" : "none")};
   margin: 0 auto;
   background: #${(props) => props.background};
 `;

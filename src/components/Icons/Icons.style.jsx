@@ -6,6 +6,9 @@ export const FlexBlock = styled.div`
   max-width: 270px;
   float: right;
   margin: 0;
+  @media only screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 export const IconWrapper = styled.div`
   position: relative;
@@ -13,6 +16,10 @@ export const IconWrapper = styled.div`
   height: 90px;
   background: ${(props) => (props.show === "block" ? "#A58C96" : "#fff")};
   border-radius: 10px;
+  @media only screen and (max-width: 374px) {
+    width: 75px;
+    height: 75px;
+  }
 `;
 
 export const Skill = styled.div`
@@ -50,5 +57,9 @@ export const Icon = styled.div`
     transition: ease-in-out 1s;
     position: absolute;
     top: 0em;
+  }
+  @media only screen and (max-width: 374px) {
+    width: 75px;
+    height: 75px;
   }
 `;

@@ -31,7 +31,7 @@ export const CardWrapper = styled.div`
   margin-bottom: 1em;
   font-weight: ${(props) => (props.weight ? props.weight : "normal")};
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     max-width: 100%;
   }
   @media only screen and (min-width: 768px) {

@@ -16,6 +16,10 @@ export const Title = styled.h4`
 
 export const FlexBlock = styled.div`
   display: flex;
+  @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+    width: 100%;
+  }
 `;
 
 export const Bubble = styled.div`
@@ -33,5 +37,13 @@ export const Bubble = styled.div`
   }
   &&:nth-child(-n + ${(props) => props.level}):hover {
     background-color: #e6dbdb;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media only screen and (max-width: 374px) {
+    width: 20px;
+    height: 20px;
   }
 `;
