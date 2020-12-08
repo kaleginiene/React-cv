@@ -25,9 +25,19 @@ function ProjectCard({ portfolio }) {
                   <S.Icon className="github" />
                 </S.SocialLink>
                 <S.SocialLink href={project.git} target="_blank">
-                  GitHub
+                  GitHub FrontEnd
                 </S.SocialLink>
               </S.FlexBlock>
+              {project.backend && (
+                <S.FlexBlock>
+                  <S.SocialLink href={project.git} target="_blank">
+                    <S.Icon className="github" />
+                  </S.SocialLink>
+                  <S.SocialLink href={project.backend} target="_blank">
+                    GitHub Backend
+                  </S.SocialLink>
+                </S.FlexBlock>
+              )}
             </S.Caption>
           </S.Container>
         ))}

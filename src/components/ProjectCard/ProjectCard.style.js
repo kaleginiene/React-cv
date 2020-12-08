@@ -48,6 +48,7 @@ export const Title = styled.h3`
   text-align: center;
   font-size: 1.5em;
   font-weight: normal;
+  margin-top: 0.8em;
 `;
 
 export const StyledLink = styled.a`
