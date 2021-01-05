@@ -43,8 +43,8 @@ function Home() {
             <S.HalfWrapper>
               <S.SubTitle>personal information</S.SubTitle>
               <S.ContactBlock>
-                <S.Icon className="location" />
-                <div>Vilnius</div>
+                <S.Icon className="phone" />
+                <S.Link href="tel:+37067728390">+370 677 28390</S.Link>
               </S.ContactBlock>
               <S.ContactBlock>
                 <S.Icon className="email" />
@@ -53,8 +53,8 @@ function Home() {
                 </S.Link>
               </S.ContactBlock>
               <S.ContactBlock>
-                <S.Icon className="phone" />
-                <S.Link href="tel:+37067728390">+370 677 28390</S.Link>
+                <S.Icon className="location" />
+                <div>Vilnius</div>
               </S.ContactBlock>
             </S.HalfWrapper>
             <S.HalfWrapper>

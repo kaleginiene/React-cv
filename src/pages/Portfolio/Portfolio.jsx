@@ -18,8 +18,8 @@ function Portfolio() {
         <Section fullWidth background="fff">
           <S.TitleHeading>My projects</S.TitleHeading>
           <S.Article>
-            To develop the skills I gained during my courses, I've been making
-            various projects. Check them out below.
+            To develop the skills I gained during my courses, I've been creating
+            and designing various projects. Check them out below.
           </S.Article>
           <BreakLine />
           <ProjectCard portfolio={PortfolioData} />

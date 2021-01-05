@@ -33,10 +33,10 @@ const educationData = [
   },
   {
     position: "Web development",
-    company: "Coursera",
+    company: "Johns Hopkins University",
     date: "Sep 2020 - Oct 2020",
     logo:
-      "https://64.media.tumblr.com/92a71d62ace9940f8ddd540400444fc4/tumblr_inline_mppo32jFBC1qz4rgp.png",
+      "https://brand.jhu.edu/assets/uploads/sites/5/2014/06/university_logo_small_vertical_blue.png",
     description: "5 weeks course of HTML, CSS, JavaScript, Bootstrap",
   },
   {

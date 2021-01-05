@@ -7,7 +7,7 @@ export const FlexBlock = styled.div`
   float: right;
   margin: 0;
   @media only screen and (max-width: 768px) {
-    max-width: 100%;
+    width: 100%;
   }
 `;
 export const IconWrapper = styled.div`
@@ -19,6 +19,12 @@ export const IconWrapper = styled.div`
   @media only screen and (max-width: 374px) {
     width: 75px;
     height: 75px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 461px) {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
   }
 `;
 
@@ -61,5 +67,11 @@ export const Icon = styled.div`
   @media only screen and (max-width: 374px) {
     width: 75px;
     height: 75px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 461px) {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
   }
 `;

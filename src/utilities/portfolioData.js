@@ -20,7 +20,7 @@ const portfolioData = [
     id: 3,
     caption: "WineStock system",
     url: WineStock,
-    page: "https://wine-system.uzprogramuosiu-viska.lt/",
+    page: "http://wine-system.uzprogramuosiu-viska.lt/",
     git: "https://github.com/kaleginiene/wine-system-frontend",
     backend: "https://github.com/kaleginiene/wine-system-backend",
   },
