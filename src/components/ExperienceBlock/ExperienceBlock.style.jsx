@@ -29,6 +29,7 @@ export const TimeBlock = styled.div`
   font-size: 0.8em;
   @media only screen and (max-width: 768px) {
     width: 100%;
+    height: 40px;
   }
   @media only screen and (min-width: 768px) {
   }
@@ -58,8 +59,6 @@ export const Block = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
-  @media only screen and (min-width: 768px) {
-  }
 `;
 
 export const Date = styled.div`
@@ -88,26 +87,26 @@ export const Date = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    width: 120px;
+    width: 200px;
     position: relative;
-    font-size: 0.7em;
+    font-size: 1em;
     background-color: #cebaba;
     float: left;
-    padding: 0.894em;
+    padding: 0.89em;
     box-sizing: border-box;
     font-weight: bold;
     margin-bottom: 0.5em;
     &&::after {
       content: "";
-      top: -0.5px;
+      top: -0.85px;
       left: 99%;
       width: 0;
       height: 0;
       position: absolute;
-      border-top: 15px solid transparent;
-      border-bottom: 15px solid transparent;
-      border-right: 12px solid transparent;
-      border-left: 12px solid #cebaba;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      border-right: 19.5px solid transparent;
+      border-left: 19.5px solid #cebaba;
     }
   }
 `;

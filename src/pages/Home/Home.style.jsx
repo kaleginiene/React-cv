@@ -84,6 +84,9 @@ export const FlexBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    display: inline-block;
+  }
 `;
 
 export const Span = styled.span`
@@ -91,8 +94,9 @@ export const Span = styled.span`
 `;
 export const HalfWrapper = styled.section`
   @media only screen and (max-width: 768px) {
-    max-width: 100%;
+    width: 100%;
     font-weight: ${(props) => (props.weight ? props.weight : "normal")};
+    padding: 0.25em 0;
   }
   @media only screen and (min-width: 768px) {
     width: calc(50% - 1em);
@@ -110,6 +114,7 @@ export const ContactBlock = styled.div`
   font-size: 1.2em;
   @media only screen and (max-width: 768px) {
     font-size: 0.9em;
+    justify-content: center;
   }
 `;
 
@@ -139,6 +144,9 @@ export const Link = styled.a`
   &:hover {
     text-decoration: none;
     color: #493f3e;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 1.1em;
   }
 `;
 

@@ -7,7 +7,7 @@ export const FlexBlock = styled.div`
   float: right;
   margin: 0;
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    max-width: 100%;
   }
 `;
 export const IconWrapper = styled.div`
@@ -16,14 +16,19 @@ export const IconWrapper = styled.div`
   height: 90px;
   background: ${(props) => (props.show === "block" ? "#A58C96" : "#fff")};
   border-radius: 10px;
-  @media only screen and (max-width: 374px) {
-    width: 75px;
-    height: 75px;
+  @media only screen and (max-width: 320px) {
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 461px) {
-    width: 90px;
-    height: 90px;
+  @media only screen and (max-width: 376px) and (min-width: 321px) {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 461px) and (min-width: 377px) {
+    width: 107px;
+    height: 107px;
     margin: 0 auto;
   }
 `;
@@ -64,14 +69,19 @@ export const Icon = styled.div`
     position: absolute;
     top: 0em;
   }
-  @media only screen and (max-width: 374px) {
-    width: 75px;
-    height: 75px;
+  @media only screen and (max-width: 320px) {
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 461px) {
-    width: 90px;
-    height: 90px;
+  @media only screen and (max-width: 375px) and (min-width: 321px) {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 461px) and (min-width: 376px) {
+    width: 107px;
+    height: 107px;
     margin: 0 auto;
   }
 `;

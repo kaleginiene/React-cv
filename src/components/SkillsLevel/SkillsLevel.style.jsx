@@ -38,11 +38,15 @@ export const Bubble = styled.div`
   &&:nth-child(-n + ${(props) => props.level}):hover {
     background-color: #e6dbdb;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 375px) and (min-width: 321px) {
     width: 25px;
     height: 25px;
   }
-  @media only screen and (max-width: 374px) {
+  @media only screen and (max-width: 768px) and (min-width: 376px) {
+    width: 28px;
+    height: 28px;
+  }
+  @media only screen and (max-width: 320px) {
     width: 20px;
     height: 20px;
   }
