@@ -21,15 +21,19 @@ export const IconWrapper = styled.div`
     height: 80px;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 376px) and (min-width: 321px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     width: 92px;
     height: 92px;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 461px) and (min-width: 377px) {
+  @media only screen and (min-width: 376px) and (max-width: 766px) {
     width: 107px;
     height: 107px;
     margin: 0 auto;
+  }
+  @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
   }
 `;
 
@@ -74,14 +78,18 @@ export const Icon = styled.div`
     height: 80px;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 375px) and (min-width: 321px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     width: 92px;
     height: 92px;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 461px) and (min-width: 376px) {
+  @media only screen and (min-width: 376px) and (max-width: 766px) and (orientation: landscape) {
     width: 107px;
     height: 107px;
     margin: 0 auto;
+  }
+  @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
   }
 `;

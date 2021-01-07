@@ -16,8 +16,8 @@ export const Title = styled.h4`
 
 export const FlexBlock = styled.div`
   display: flex;
-  @media only screen and (max-width: 768px) {
-    margin: 0 auto;
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    justify-content: center;
     width: 100%;
   }
 `;
@@ -38,16 +38,20 @@ export const Bubble = styled.div`
   &&:nth-child(-n + ${(props) => props.level}):hover {
     background-color: #e6dbdb;
   }
-  @media only screen and (max-width: 375px) and (min-width: 321px) {
-    width: 25px;
-    height: 25px;
-  }
-  @media only screen and (max-width: 768px) and (min-width: 376px) {
-    width: 28px;
-    height: 28px;
-  }
   @media only screen and (max-width: 320px) {
     width: 20px;
     height: 20px;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media only screen and (min-width: 376px) and (max-width: 766px) {
+    width: 28px;
+    height: 28px;
+  }
+  @media only screen and (min-width: 767px) and (max-width: 996px) and (orientation: landscape) {
+    width: 18px;
+    height: 18px;
   }
 `;

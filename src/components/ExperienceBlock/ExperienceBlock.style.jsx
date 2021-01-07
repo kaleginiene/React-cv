@@ -30,8 +30,7 @@ export const TimeBlock = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     height: 40px;
-  }
-  @media only screen and (min-width: 768px) {
+    margin-bottom: 1em;
   }
 `;
 export const Line = styled.div`
@@ -58,6 +57,7 @@ export const Block = styled.div`
   }
   @media only screen and (max-width: 768px) {
     width: 100%;
+    margin-bottom: 1em;
   }
 `;
 

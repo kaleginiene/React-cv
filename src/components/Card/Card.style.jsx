@@ -7,16 +7,16 @@ export const Card = styled.section`
   padding: 2em 0 0 0;
   background-color: #e6dbdb;
   margin: 0 auto;
-  @media only screen and (min-width: 769px) {
-    max-width: 300px;
-    position: fixed;
-  }
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
-    max-width: 300px;
-  }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
     width: 100%;
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    max-width: 15em;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 18.75em;
+    position: fixed;
   }
 `;
 
@@ -28,7 +28,7 @@ export const Image = styled.img`
   object-position: 10% 10%;
   margin: 1em 1.5em;
   border: 2px double ${(props) => props.theme.secondary.color};
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
+  @media only screen and (min-width: 576px) and (max-width: 1023px) and (orientation: landscape) {
     width: 150px;
     height: 150px;
   }

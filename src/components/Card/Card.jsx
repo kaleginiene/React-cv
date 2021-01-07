@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./Card.style";
-import Resume from "../../assets/downloads/resume.pdf";
+import Resume from "../../assets/downloads/Ieva-Kaleginiene-CV.pdf";
 
-function Card({ imgUrl, name, career, logo }) {
+function Card({ imgUrl, name, career }) {
   return (
     <S.Card>
       <S.Image src={imgUrl} />

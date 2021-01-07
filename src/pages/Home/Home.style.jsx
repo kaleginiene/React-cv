@@ -7,7 +7,7 @@ export const Home = styled.main`
     max-width: 100%;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
@@ -22,28 +22,31 @@ export const SectionWrapper = styled.div`
     max-width: 100%;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    width: calc(100% - 15em - 1.5em);
+  }
+  @media only screen and (min-width: 1024px) {
     width: calc(70% - 1em);
-    margin: 0.5em 0;
+    margin: 0;
     box-sizing: border-box;
   }
 `;
 export const CardWrapper = styled.div`
-  width: 30%;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 768px) {
     width: 95%;
     max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
   }
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
-    max-width: 300px;
+  @media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    width: 15em;
+    margin: 0 0.5em;
   }
-  @media only screen and (min-width: 769px) {
-    width: calc(30% - 1em);
-    margin: 0.5em;
-    position: relative;
+  @media only screen and (min-width: 1024px) {
+    width: 30%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1em;
   }
 `;
 
@@ -84,7 +87,7 @@ export const FlexBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     display: inline-block;
   }
 `;
@@ -93,7 +96,7 @@ export const Span = styled.span`
   font-weight: bold;
 `;
 export const HalfWrapper = styled.section`
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
     width: 100%;
     font-weight: ${(props) => (props.weight ? props.weight : "normal")};
     padding: 0.25em 0;
@@ -112,9 +115,12 @@ export const ContactBlock = styled.div`
   align-items: center;
   margin-bottom: 1em;
   font-size: 1.2em;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     font-size: 0.9em;
     justify-content: center;
+  }
+  @media only screen and (min-width: 767px) and (max-width: 996px) {
+    font-size: 0.9em;
   }
 `;
 

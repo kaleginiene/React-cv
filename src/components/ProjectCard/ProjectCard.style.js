@@ -4,15 +4,16 @@ import { GitHub, Tag } from "../../assets/icons";
 export const FlexBlock = styled.section`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1em;
   align-items: center;
   justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
 `;
 
 export const Container = styled.div`
   width: calc(50% - 1em);
   text-align: center;
-  height: 200px;
+  height: 15em;
   margin: 0.5em;
   margin-bottom: 1em;
   cursor: pointer;
@@ -26,6 +27,7 @@ export const Container = styled.div`
   }
   @media only screen and (max-width: 768px) {
     width: 100%;
+    height: 25em;
   }
 `;
 export const Caption = styled.div`

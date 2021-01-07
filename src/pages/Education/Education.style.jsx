@@ -6,7 +6,7 @@ export const Education = styled.main`
     max-width: 100%;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     max-width: 1000px;
     display: flex;
     margin: 0 auto;
@@ -18,29 +18,35 @@ export const SectionWrapper = styled.div`
     max-width: 100%;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    width: calc(100% - 15em - 1.5em);
+  }
+  @media only screen and (min-width: 1024px) {
     width: calc(70% - 1em);
-    margin: 0.5em;
+    margin: 0;
     box-sizing: border-box;
   }
 `;
+
 export const CardWrapper = styled.div`
-  width: 300px;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  font-weight: ${(props) => (props.weight ? props.weight : "normal")};
   @media only screen and (max-width: 768px) {
     width: 95%;
     max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
   }
-  @media only screen and (min-width: 768px) {
-    width: calc(30% - 1em);
-    margin: 0.5em;
-    position: sticky;
-    box-sizing: border-box;
+  @media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    width: 15em;
+    margin: 0 0.5em;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 30%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1em;
   }
 `;
+
 export const TitleHeading = styled.h1`
   font-family: "Quicksand", sans-serif;
   color: #333;
