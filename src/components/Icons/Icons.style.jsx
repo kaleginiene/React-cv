@@ -32,6 +32,10 @@ export const IconWrapper = styled.div`
     margin: 0 auto;
   }
   @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    width: 100px;
+    height: 100px;
+  }
+  @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
     width: 70px;
     height: 70px;
   }
@@ -88,7 +92,12 @@ export const Icon = styled.div`
     height: 107px;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 767px) and (max-width: 1024px) {
+  @media only screen and (min-width: 376px) and (max-width: 766px) {
+    width: 107px;
+    height: 107px;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
     width: 70px;
     height: 70px;
   }

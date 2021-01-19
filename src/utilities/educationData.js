@@ -24,6 +24,14 @@ const educationData = [
       "3 month course of: WebDesign, HTML & CSS basics, WordPress, SEO, eCommerce basics",
   },
   {
+    position: "Agile Crash Course: Agile Project Management; Agile Delivery",
+    company: "Udemy",
+    date: "Jan 2021",
+    logo: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg",
+    description:
+      "Agile fundamentals course. During this course I've learned the meaning of user stories, daily stand-ups, retrospectives and kanban boards. Moreover, during this course I've tried Trello and Atlasian Jira tools.",
+  },
+  {
     position: "Java Script Basics",
     company: "Coursera",
     date: "Aug 2020",

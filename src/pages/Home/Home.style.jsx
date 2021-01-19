@@ -26,8 +26,9 @@ export const SectionWrapper = styled.div`
     width: calc(100% - 15em - 1.5em);
   }
   @media only screen and (min-width: 1024px) {
-    width: calc(70% - 1em);
+    width: calc(70% - 1.5em);
     margin: 0;
+    margin-left: 0.5em;
     box-sizing: border-box;
   }
 `;
