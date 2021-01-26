@@ -8,6 +8,7 @@ import {
   WebDev,
   Wgt,
   Agile,
+  FrontEndAdvanced,
 } from "../../assets/certificates";
 import "./Carousel.css";
 
@@ -17,13 +18,13 @@ function CarouselBoot() {
       <Carousel.Item>
         <img className="d-block w-100" src={FrontEnd} alt="Front-End" />
         <Carousel.Caption>
-          <h3>Front-End</h3>
+          <h4>Front-End</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={JsBasics} alt="JavaScript Basics" />
         <Carousel.Caption>
-          <h3>JavaScript Basics</h3>
+          <h4>JavaScript Basics</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,13 +34,13 @@ function CarouselBoot() {
           alt="Digital skills training"
         />
         <Carousel.Caption>
-          <h3>Digital skills training</h3>
+          <h4>Digital skills training</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={WebDev} alt="Web development" />
         <Carousel.Caption>
-          <h3>Web development</h3>
+          <h4>Web development</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -49,7 +50,7 @@ function CarouselBoot() {
           alt="Women Go Tech: 'Atrask technologijas!'"
         />
         <Carousel.Caption>
-          <h3>Atrask technologijas</h3>
+          <h4>Atrask technologijas</h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -59,7 +60,17 @@ function CarouselBoot() {
           alt="Agile project management"
         />
         <Carousel.Caption>
-          <h3>Agile project management</h3>
+          <h4>Agile project management</h4>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={FrontEndAdvanced}
+          alt="Front-end intermediate course"
+        />
+        <Carousel.Caption>
+          <h4>Front-end intermediate course</h4>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
